@@ -17,8 +17,9 @@ class SerializationUtil
     public static <T> void DeserializeObject(T o, String filepath){
         try{
             ObjectInputStream stream = new ObjectInputStream(new FileInputStream(filepath));
+            o = (T) stream.readObject();
         }
-        catch (IOException e){
+        catch (IOException | ClassNotFoundException e){
             System.out.println(e.getMessage());
         }
     }

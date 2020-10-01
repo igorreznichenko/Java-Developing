@@ -62,7 +62,8 @@ public class CollectionImplement {
 
         public boolean contains(Object o) {
             for (int i = 0; i < length; i++) {
-                if (o.equals(arr[i])) ;
+                if (o.equals(arr[i]))
+                    return true;
             }
             return false;
         }
