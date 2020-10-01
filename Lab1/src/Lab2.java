@@ -8,7 +8,8 @@ public class Lab2 {
     public static void main(String[] args) {
 
         List<String> myList = Arrays.asList("a1","a2","b1", "c2", "c1");
-        myList.stream().filter(x->x.charAt(0) == 'c').sorted().map(x->x.toUpperCase()).forEach(x-> System.out.println(x));
+        myList.stream().filter(x->x.charAt(0) == 'c').sorted((x,y)->x.compareTo(y)).map(x->x.toUpperCase()).forEach(x-> System.out.println(x));
+        String str = "esfraewfzsdfhrdhd";
 
         System.out.println("input length of array");
         int n;
