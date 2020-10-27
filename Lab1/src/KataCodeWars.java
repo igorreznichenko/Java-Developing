@@ -1,7 +1,7 @@
 public class KataCodeWars
 {
     public static void main(String[] args) {
-            System.out.println(uniqVal(new int[]{1,1,1,1,2,1,1,1}));
+            System.out.println(uniqVal(new int[]{2,1,1,1,1,1,1}));
             for (var o: SortEvenNumber(new int[]{5,2,7,4,3,8})) {
                 System.out.print(o + " ");
             }
@@ -37,3 +37,4 @@ public class KataCodeWars
 
         }
     }
+// 000000001
